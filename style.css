@@ -140,5 +140,10 @@ footer {
 
 /* Styling für das Kontaktformular */
 #kontakt {
-    color: #000000;
+    color: #ffffff00;
+}
+
+/* Styling für die Hover-Buttons */
+button:hover {
+    background-color: blue;
 }
