@@ -92,3 +92,44 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/* Styling für die Boxen */
+.box {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.box:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.box:hover:before {
+    opacity: 1;
+}
+
+/* Styling für den Text */
+.box a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.box:hover a {
+    color: #fff;
+}
