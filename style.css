@@ -137,3 +137,9 @@ footer {
 .box:hover a {
     color: #fff;
 }
+
+/* Styling für den Kontaktbereich */
+#kontakt {
+	background-color: #000000;
+	color: #ffffff;
+}
