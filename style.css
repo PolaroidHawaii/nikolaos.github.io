@@ -129,7 +129,7 @@ footer {
 
 /* Styling für den Text */
 .box a {
-    color: #333;
+    color: #000000;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -138,8 +138,8 @@ footer {
     color: #fff;
 }
 
-/* Styling für den Kontaktbereich */
+/* Styling für das Kontaktformular */
 #kontakt {
-	background-color: #000000;
-	color: #ffffff;
+    background-color: #000000;
+    color: #000000;
 }
