@@ -22,6 +22,10 @@ ul {
     padding: 0;
 }
 
+p {
+    color: white;
+}
+
 /* Styling für den Header */
 
 header {
