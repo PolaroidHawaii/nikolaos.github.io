@@ -1,9 +1,15 @@
 /* allgemeine Stilvorgaben */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 
 }
 /* Styling für den Header */
@@ -11,11 +17,13 @@
 body {
     min-height: 150vh;
     background: linear-gradient(#fff, #000);
+    position: relative;
 }
 
 
+
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -24,6 +32,9 @@ header {
     align-items: center;
     padding: 30px 10%;
     z-index: 10000;
+    background-color: #F4F4F4;
+    border-end-start-radius: 50px;
+    border-end-end-radius: 50px;
 }
 
 header .NK {
@@ -33,6 +44,7 @@ header .NK {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: 0.6s;
 }
 
 header ul {
@@ -58,10 +70,10 @@ header ul li a {
 
 }
 
-header ul li a:hover, 
-header ul li a.active {
+header ul li a:hover {
     background: #000;
     color: rgb(255, 255, 255);
+    transition: 0.8s;
 }
 
 section {
@@ -83,31 +95,48 @@ section {
     z-index: 9;
 }
 
-#btn {
+#Loslegen {
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
-    border-radius: 40px;
     background: #000;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(100px);
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 85%;
+
 }
 
-.skills {
-    position: relative;
+.Profil {
+    position: absolute;
     padding: 100px;
-    background: #000000;
 }
 
-.skills h2 {
+.Profil h1 {
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #ffffff;
 }
 
-.skills p {
+.Profil p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
+.Kontakt {
+    position: absolute;
+    padding: 100px;
+}
+.Kontakt h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.Kontakt p {
     font-size: 1.5em;
     color: #fff;
 }
