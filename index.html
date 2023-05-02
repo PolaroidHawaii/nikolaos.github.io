@@ -66,13 +66,58 @@
 		</section>
 		<section id="Profil">
 			<div class="Profil">
-				<h1>Profil</h1>
-				<p>-Skill1<br>
-				-Skill2<br>
-				-Skill3<br>
-				</p>
+				<div class="about-col-1"></div>
+				<div class="about-col-2">
+					<h1 class="sub-title">Profil</h1>
+					<p>Text über mich</p>
+					<div class="tab-titles">
+						<ul>
+							<li><a class="tab-links active link" onclick="opentab('skills')">Skills</a></li>
+							<li><a class="tab-links" onclick="opentab('experience')">Experience</a></li>
+							<li><a class="tab-links" onclick="opentab('education')">Education</a></li>
+						</ul>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>UI?UX</span><br>Designing Interfaces</li>
+							<li><span>UI?UX</span><br>Designing Interfaces</li>
+							<li><span>UI?UX</span><br>Designing Interfaces</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>kai</span><br>Dening Intces</li>
+							<li><span>UI?UX</span><br>Designing Irfaces</li>
+							<li><span>tetia</span><br>Desing Interfaces</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>ola</span><br>Designinerfaces</li>
+							<li><span>UI?UX</span><br>Desing Interfaces</li>
+							<li><span>afta</span><br>Desigterfaces</li>
+						</ul>
+					</div>
+				</div>
 
 			</div>
+
+			<script>
+
+				var tablinks = document.getElementsByClassName("tab-links");
+				var tabcontents = document.getElementsByClassName("tab-contents");
+				function opentab(tabname) {
+					for(tablink of tablinks) {
+						tablink.classList.remove("active-link");
+					}
+					for(tabcontent of tabcontents) {
+						tabcontent.classList.remove("active-tab");
+					}
+					event.currentTarget.classList.add("active-link");
+					document.getElementById(tabname).classList.add("active-tab");
+				}
+			</script>
+
 		</section>	
 
 		<section id="Kontakt">
