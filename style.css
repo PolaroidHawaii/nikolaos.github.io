@@ -193,6 +193,7 @@ section {
 
 
 .tab-titles ul{
+    font-size: 20px;
     display: flex;
     margin: 20px 0 40px;
 }
@@ -238,7 +239,8 @@ section {
 }
 
 .tab-contents ul li span {
-    color: #2ab9b5;
+    font-size: 25px;
+    color: #ffffff;
     font-size: 14px;
 }
 
