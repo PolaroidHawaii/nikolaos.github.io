@@ -15,7 +15,7 @@
 /* Styling für den Header */
 
 body {
-    min-height: 150vh;
+    min-height: 100vh;
     background: linear-gradient(#fff, #000);
     position: relative;
 }
@@ -23,7 +23,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    height: 500vh;
+    height: 350vh;
     overflow: hidden;
 }
 
@@ -259,20 +259,47 @@ section {
 
 
 
+.contact-left {
+    display: flex;
+    flex-basis: 35%;
+    background: #fff;
 
 
-
-
-.Kontakt {
-    position: absolute;
-    padding: 100px;
 }
-.Kontakt h1 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
+
+
+.contact-left p {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #000000;
+    align-items: center;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000;
+}
+
+
+
+.contact-left p i {
+
     color: #ffffff;
+    margin-right: 15px;
+    font-size: 25px;
 }
-.Kontakt p {
-    font-size: 1.5em;
+
+.social-icons {
+
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
     color: #fff;
+    display: inline-block;
+    transition: 0.8s;
 }
+.social-icons a:hover {
+    color: #0073ff;
+}
+
