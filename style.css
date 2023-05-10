@@ -28,6 +28,7 @@ body {
 }
 
 .bubbles{
+    opacity: 60%;
     position: relative;
     display: flex;
 }
@@ -69,9 +70,9 @@ header {
     align-items: center;
     padding: 30px 10%;
     z-index: 10000;
-    background-color: #F8F8F8;
-    border-end-start-radius: 50px;
-    border-end-end-radius: 50px;
+    background-color: #F4F4F5;
+    border-end-start-radius: 30px;
+    border-end-end-radius: 30px;
 }
 
 header .NK {
@@ -143,6 +144,8 @@ section {
 }
 
 #Loslegen {
+    position: relative;
+    right: 10px;
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
@@ -161,6 +164,8 @@ section {
 /*--------------Profil-----------------*/
 
 .Profil {
+    position: relative;
+    left: 45px;
     padding: 80px 0;
     color: #000;
 
@@ -187,12 +192,14 @@ section {
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     
 }
 
 
 .tab-titles ul{
+    position: relative;
+    right: 70px;
     font-size: 20px;
     display: flex;
     margin: 20px 0 40px;
@@ -255,40 +262,18 @@ section {
 
 
 
-
-
-
-
-.contact-left {
-    display: flex;
-    flex-basis: 35%;
-    background: #fff;
-
-
-}
-
-
-.contact-left p {
-    display: inline-block;
-    margin-top: 30px;
-    background-color: #000000;
-    align-items: center;
-    padding: 15px;
-    margin: 15px 0;
-    color: #000;
-}
-
-
-
-.contact-left p i {
-
-    color: #ffffff;
-    margin-right: 15px;
-    font-size: 25px;
+.sub-title1 {
+    color: #fff;
+    font-size: 60px;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
 }
 
 .social-icons {
-
+    position: relative;
+    top: 100px;
+    left: 300px;
     margin-top: 30px;
 }
 .social-icons a {
@@ -303,3 +288,40 @@ section {
     color: #0073ff;
 }
 
+.contact-right {
+    position: relative;
+    left: 400px;
+    bottom: 250px;
+    align-items: center;
+
+}
+
+
+.btn {
+    position: relative;
+    left: 360px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 35px;
+    background: #ffffff;
+    color: #000000;
+    padding: 20px 30px;
+}
+
+.contact-right form {
+    width: 50%;
+
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000;
+    font-size: 18px;
+    border-radius: 6px;
+
+}    

@@ -70,7 +70,6 @@
 				<div class="about-col-1"></div>
 				<div class="about-col-2">
 					<h1 class="sub-title">Profil 🧑</h1>
-					<p>Text über mich</p>
 					<div class="tab-titles">
 						<ul>
 							<li><a class="tab-links active link" onclick="opentab('skills')">Skills</a></li>
@@ -88,7 +87,7 @@
 					<div class="tab-contents" id="experience">
 						<ul>
 							<li><span>Webseite erstellen:</span><br>-z.B. diese hier :)</li>
-							<li><span>Elon Musk:</span><br>-An Live meeting von ELon Musk teilgenommen.</li>
+							<li><span>Elon Musk:</span><br>-An Live meeting von ELon Musk <br>teilgenommen.</li>
 							<li><span>Praktika:</span><br>-An multible Praktika die verschiedensten <br>  Erfahrungen wie Druck, Produktion und <br>  Versand gesammelt.</li>
 						</ul>
 					</div>
@@ -123,15 +122,28 @@
 	
 	<section id="Kontakt">
 		<div class="content-left">
-			<h1 class="sub-title">Schreiben Sie mir!</h1>
-			<p><i class="fa-solid fa-envelope"></i> nikolaoskat@protonmail.com</p>
-			<p><i class="fa-solid fa-phone"></i> +4915755591288</p>
-			<div class="social-icons">
-				<a href="https://twitter.com/1katran"><i class="fa-brands fa-square-twitter"></i></a>
-				<a href="https://github.com/nikolaoskat"><i class="fa-brands fa-square-github"></i></a>
-				<a href="https://www.instagram.com/51katran/"><i class="fa-brands fa-square-instagram"></i></a>
-				
+			<h1 class="sub-title1">Schreiben Sie mir!  <i class="fa-sharp fa-solid fa-comments"></i></h1>
+			<form action="https://formsubmit.co/nikolaoskat@protonmail.com" method="POST">	
+				<input type="text" name="Name" placeholder="Ihr Name" required>
+				<input type="email" name="email" placeholder="Ihre Emailadresse" required>
+				<textarea name="Message" rows="6" placeholder="Ihre Nachticht..."></textarea>
+				<button type="submit" class="btn">Senden</button>
+				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_autoresponse" value="Das ist eine automatisierte Antwort.
+				Ich habe ihre Nachricht erhalten und werde ihnen bald antworten :)">
+			</form>	
+		</div>	
+
+		
 	</section>	
+	<div class="contact-right">
+		<div class="social-icons">
+			<a href="https://twitter.com/1katran"><i class="fa-brands fa-square-twitter"></i></a>
+			<a href="https://github.com/nikolaoskat"><i class="fa-brands fa-square-github"></i></a>
+			<a href="https://www.instagram.com/51katran/"><i class="fa-brands fa-square-instagram"></i></a>
+		</div>
+		
+	</div>			
 
 
 		
