@@ -1,0 +1,51 @@
+::-webkit-scrollbar {
+    display: none;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 9;
+    padding: 5;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+.bubbles{
+    opacity: 60%;
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #F8F8F8;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10pSx #F8F8F8, 0 0 50px #F8F8F8, 0 0 100px #F8F8F8;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    box-shadow: 0 0 0 10pSx #F8F8F8, 0 0 50px #F8F8F8, 0 0 100px #F8F8F8;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(#fff, #000);
+    position: relative;
+}

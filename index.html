@@ -124,10 +124,23 @@
 		<div class="content-left">
 			<h1 class="sub-title1">Schreiben Sie mir!  <i class="fa-sharp fa-solid fa-comments"></i></h1>
 			<form action="https://formsubmit.co/8c36be3c7d4092219faf41c99efaec2d" method="POST">	
+				<script>
+					function showMessage() {
+					  var message = "Bestätigen Sie ihre Nachricht. (Das Senden dauert eine Weile ⌛...)";
+					alert(message);
+					}
+				  </script>
 				<input type="text" name="Name" placeholder="Ihr Name" required>
 				<input type="email" name="email" placeholder="Ihre Emailadresse" required>
-				<textarea name="Message" rows="6" placeholder="Ihre Nachticht..."></textarea>
-				<button type="submit" class="btn">Senden</button>
+				<textarea name="Message" rows="6" placeholder="Ihre Nachticht"></textarea>
+				<button type="submit" class="btn"
+				function showMessage() {
+					var message = "Bestätigen Sie ihre Nachricht 
+					(Das Senden dauert eine Weile ⌛...)";
+					alert(message);
+				  }
+				  onclick="showMessage()"Bestätigen Sie ihre Nachricht 
+				  (Das Senden dauert eine Weile ⌛...)>Senden</button>
 				<input type="hidden" name="_captcha" value="false">
 				<input type="hidden" name="_autoresponse" value="Das ist eine automatisierte Antwort.
 				Ich habe ihre Nachricht erhalten und werde ihnen bald antworten :)">
@@ -144,6 +157,14 @@
 		</div>
 		
 	</div>			
+
+	<footer>
+		<h2>&copy; Nikolaos Katrantzis ©️</h2>
+		<div>
+			<a href="impressum.html">Impressum</a>
+		</div>	
+		<a href="datenschutzerklärung.html">Datenschutzerklärung</a>
+	</footer>
 
 
 		

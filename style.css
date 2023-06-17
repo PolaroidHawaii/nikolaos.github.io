@@ -325,3 +325,27 @@ form input, form textarea {
     border-radius: 6px;
 
 }    
+
+
+footer{
+    height: 15vh;
+    bottom: 0;
+}
+
+footer h2{
+    position: absolute;
+    left: 41%;
+    color: #fff;
+}
+footer div a{
+    position: absolute;
+    left: 40%;
+    color: #fff;
+    bottom: 200px;
+}
+footer a{
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    bottom: 200px;
+}
