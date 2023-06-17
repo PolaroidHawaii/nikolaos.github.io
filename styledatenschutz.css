@@ -47,7 +47,7 @@
     }
 }
 body {
-    min-height: 230vh;
+    min-height: 350vh;
     background: linear-gradient(#fff, #000);
     position: relative;
 }
